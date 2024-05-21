@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Chatbot</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <h2>MChatBot</h2>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="doc">
+                <img src="../static//img/about.png" alt="">
+            </div>
+            <div class="aboutMe">
+               <h1>About Me</h1>
+               <p>I am a medical chatbot that utilizes a dataset from Kaggle containing medical data. You have trained a model using LSTM (Long Short-Term Memory) neural networks to enable the chatbot to understand and respond to user queries or messages.
+
+                The chatbot works by processing user inputs, leveraging the trained LSTM model to predict appropriate responses based on the medical dataset. It can engage in conversations with users, providing relevant information, answering questions, and offering assistance with medical-related inquiries.
+                
+                This chatbot serves as an interactive and intelligent interface, allowing users to communicate in natural language and receive informative and helpful responses in return. It aims to enhance user experience and provide valuable support in medical-related discussions or inquiries.</p>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+       let chats=[]
+        let chatLoad=()=>{
+            let chat_zone = `<div id="chat_zone"></div>`
+            chats.forEach(chat=>{
+                let  ques= chat.question
+                let ans = chat.answer
+                let content = `
+                    <div id="chatzone">
+                        <div id="user"><img src="./static//img/user.png" height="50px" width="50px"/>  ${ques}</div>
+                        <div id="chatbot">${ans}<img src="./static//img/chatbot.png" height="50px" width="50px"/></div>
+                    </div>
+                
+                `
+                chat_zone +=content
+            })
+            document.getElementById("mychats").innerHTML = chat_zone
+        }
+        $(document).ready(()=>{
+           const sendBtn = document.getElementById("sendBtn")
+           sendBtn.addEventListener('click',()=>{
+            var inputText = $("#userInput").val()
+            console.log(inputText)
+            if(inputText!=""){
+                    $.ajax({
+                        type:'GET',
+                        url:`/predict_diseases/${inputText}`,
+                        
+                        success:function(response){
+                            answer =[]
+                            if(response.response.length>0){
+                                let res = response.response
+                                res.forEach(element => {
+                                    console.log(element)
+                                    answer.push(element)
+                                });
+                                let chat_response = {"question":inputText,"answer":answer}
+                               
+                                chats.push(chat_response)
+                                console.log(chats)
+                                $("#userInput").val("")
+                                chatLoad()
+                            }
+                            else{
+                                console.log("No response")
+                            }
+                        },
+                        error:function(error){
+                            console.error('Error',error)
+                        }
+
+                    })
+            }
+            else{
+                alert("Type your questions to send")
+            }
+           })
+        })
+    </script>
+</body>
+</html>

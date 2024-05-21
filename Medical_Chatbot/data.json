@@ -1,0 +1,553 @@
+{"intents": [
+    {
+      "tag": "Greeting",
+      "patterns": ["Hi", "Hello", "Hey there", "Good morning"],
+      "responses": ["Hello! How can I assist you today?"]
+    },
+    {
+      "tag": "Symptoms",
+      "patterns": ["What are the symptoms of fever?", "I have a headache and fatigue", "Symptoms of diabetes"],
+      "responses": ["Common symptoms of fever include high body temperature, chills, headache, muscle aches, and fatigue. Over-the-counter medications such as acetaminophen or ibuprofen are often used to help reduce fever and alleviate associated discomfort.",
+                    "Headache and fatigue can be symptoms of various conditions. I recommend consulting a healthcare professional for personalized advice.For headache relief, over-the-counter medications such as acetaminophen (e.g., Tylenol), ibuprofen (e.g., Advil, Motrin), or aspirin can be effective. ",
+                    "Symptoms of diabetes may include frequent urination, increased thirst, unexplained weight loss, fatigue, and blurred vision."]
+    },
+    {
+      "tag": "Conditions",
+      "patterns": ["What is diabetes?", "Tell me about asthma", "Hypertension"],
+      "responses": ["Diabetes is a chronic condition that affects how your body regulates blood sugar (glucose). There are different types of diabetes, including type 1, type 2, and gestational diabetes.",
+                    "Asthma is a chronic respiratory condition characterized by inflammation and narrowing of the airways, leading to wheezing, shortness of breath, coughing, and chest tightness.",
+                    "Hypertension, or high blood pressure, is a common condition in which the force of blood against the artery walls is consistently too high. It can lead to various complications if left untreated."]
+    },
+    {
+      "tag": "Treatments",
+      "patterns": ["How to treat a cold?", "Treatment for arthritis", "Management of hypertension"],
+      "responses": ["For a cold, it is recommended to get plenty of rest, stay hydrated, and take over-the-counter medications to alleviate symptoms such as fever, sore throat, and congestion.",
+                    "Treatment for arthritis may include medications (such as nonsteroidal anti-inflammatory drugs), physical therapy, lifestyle modifications, and in severe cases, surgery.",
+                    "Management of hypertension often involves lifestyle changes (such as maintaining a healthy diet, regular exercise, and weight management) and medications (such as ACE inhibitors, beta-blockers, or diuretics) to lower blood pressure."]
+    },
+    
+    {
+      "tag": "Goodbye",
+      "patterns": ["Goodbye", "Bye", "See you later", "Take care","Thank you"],
+      "responses": ["Goodbye! Take care and feel free to reach out if you have more questions in the future."]
+    },
+        {"tag": "Cuts",
+         "patterns": ["What to do if Cuts?", "How to cure Cuts?", "Which medicine to apply for Cuts?", "what to apply on cuts?", "Cuts"],
+         "responses": ["Wash the cut properly to prevent infection and stop the bleeding by applying pressure for 1-2minutes until bleeding stops. Apply Petroleum Jelly to make sure that the wound is moist for quick healing. Finally cover the cut with a sterile bandage. Pain relievers such as acetaminophen can be applied."],
+         "context_set": ""
+        },
+
+        {"tag": "Abrasions",
+         "patterns": ["how do you treat abrasions?", "Do Abrasions cause scars?", "Abrasions", "what to do if abrasions?", "Which medicine to apply for abrasions?", "How to cure abrasions?"],
+         "responses": ["Begin with washed hands.Gently clean the area with cool to lukewarm water and mild soap. Remove dirt or other particles from the wound using sterilized tweezers.For a mild scrape that’s not bleeding, leave the wound uncovered.If the wound is bleeding, use a clean cloth or bandage, and apply gentle pressure to the area to stop any bleeding.Cover a wound that bled with a thin layer of topical antibiotic ointment, like Bacitracin, or a sterile moisture barrier ointment, like Aquaphor. Cover it with a clean bandage or gauze. Gently clean the wound and change the ointment and bandage once per day.Watch the area for signs of infection, like pain or redness and swelling. See your doctor if you suspect infection."],
+         "context_set": ""
+        },
+
+        {"tag": "stings",
+         "patterns": ["How do you treat Sting?", "Stings", "What to do if you get a sting?", "Which medicine to apply if sting?"],
+         "responses": ["Remove any stingers immediately. Some experts recommend scraping out the stinger with a credit card. Applying ice to the site may provide some mild relief. Apply ice for 20 minutes once every hour as needed. Wrap the ice in a towel or keep a cloth between the ice and skin to keep from freezing the skin. Taking an antihistamine such as diphenhydramine (Benadryl) or a nonsedating one such as loratadine (Claritin) will help with itching and swelling. Take acetaminophen (Tylenol) or ibuprofen (Motrin)for pain relief as needed. Wash the sting site with soap and water. Placing hydrocortisone cream on the sting can help relieve redness, itching, and swelling."],
+         "context_set": ""
+        },
+
+        {"tag": "Splinter",
+         "patterns": ["How to remove Splinters", "How to cure Splinters?", "What to do if I have splinters?", "How do you bring a splinter to the surface?"],
+         "responses": ["1. SOAK IT IN EPSOM SALTS. Dissolve a cup of the salts into a warm bath and soak whatever part of the body has the splinter. Failing that, you can also put some of the salts onto a bandage pad and leave it covered for a day; this will eventually help bring the splinter to the surface. 2. VINEGAR OR OIL. Another simple way to draw out that stubborn splinter is to soak the affected area in oil (olive or corn) or white vinegar. Just pour some in a bowl and soak the area for around 20 to 30 minutes,"],
+         "context_set": ""
+        },
+
+        {"tag": "Sprains",
+         "patterns": ["How do you treat a sprain?", "what to do if i get a sprain?", "Which cream to apply if i get a sprain?", "Which medicine to apply if I get a sprain?"],
+         "responses": ["Use an ice pack or ice slush bath immediately for 15 to 20 minutes and repeat every two to three hours while you're awake. To help stop swelling, compress the ankle with an elastic bandage until the swelling stops. In most cases, pain relievers — such as ibuprofen (Advil, Motrin IB, others) or naproxen sodium (Aleve, others) or acetaminophen (Tylenol, others) are enough to manage the pain of a sprained ankle."],
+         "context_set": ""
+        },
+
+        {"tag": "Strains",
+         "patterns": ["How do you treat a strain?", "what to do if i get a strain?", "Which cream to apply if i get a strain?", "Which medicine to apply if I get a strain?", "How do you diagnose a strain?", "Is heat or ice better for a pulled muscle?"],
+         "responses": ["Rest,Ice,Compression and Elevation can be used to cure strains. Avoid using your muscle for a few days, especially if movement causes an increase in pain and also Apply ice immediately after injuring your muscle. This will minimize swelling. Don’t put ice directly on your skin. Use an ice pack or wrap ice in a towel. To reduce swelling, wrap the affected area with an elastic bandage until swelling comes down."],
+         "context_set": ""
+        },
+
+        {"tag": "Fever",
+         "patterns": ["How do you treat a mild Fever?", "what to do if i get a mild fever?", "Which medicine to take if I get a mild fever?", "fever"],
+         "responses": ["To treat a fever at home: 1)Drink plenty of fluids to stay hydrated. 2)Dress in lightweight clothing. 3)Use a light blanket if you feel chilled, until the chills end. 4)Take acetaminophen (Tylenol, others) or ibuprofen (Advil, Motrin IB, others). 5) Get medical help if the fever lasts more than five days in a row."],
+         "context_set": ""
+        },
+
+        {"tag": "Nasal Congestion",
+         "patterns": ["How do you treat nasal Congestion?", "what to do if i get a nasal congestion?", "Which medicine to take if I have a nasal congestion?", "what to do if i have a blocked nose?", "How do you treat a blocked nose?", "How long does nasal congestion last?"],
+         "responses": ["When you’re stuffed up, focus on keeping your nasal passages and sinuses moist. To keep your nasal passages moist, you can: 1)Use a humidifier or vaporizer. 2)Drink lots of fluids. This will thin out your mucus, which could help prevent blocked sinuses. 3)Place a warm, wet towel on your face. It may relieve discomfort and open your nasal passages."],
+         "context_set": ""
+        },
+
+        {"tag": "Cough",
+         "patterns": ["How to cure cough?","How do you treat cough?", "what to do if i get a cough?", "Which medicine to take if I get cough?", "How do you get rid of cough?"],
+         "responses": ["1) Honey:- Use honey to treat a cough, mix 2 teaspoons (tsp) with warm water or an herbal tea. Drink this mixture once or twice a day. Do not give honey to children under 1 year of age. 2) Ginger:- Brew up a soothing ginger tea by adding 20–40 grams (g) of fresh ginger slices to a cup of hot water. Allow to steep for a few minutes before drinking. Add honey or lemon juice to improve the taste and further soothe a cough. 3) Fluids:- Staying hydrated is vital for those with a cough or cold. Research indicates that drinking liquids at room temperature can alleviate a cough, runny nose, and sneezing."],
+         "context_set": ""
+        },
+
+        {"tag": "Sore Throat",
+         "patterns": ["How do you treat sore throat?", "what to do if i get a sore throat?", "Which medicine to take if I get a sore throat?", "How to cure sore throat?"],
+         "responses": ["1) Make sure you get plenty of rest and drink a lot of fluids. 2)Inhale steam,Run hot water in a sink.Drape a towel over you to trap the steam, and have the person lean over the sink with the water running. Tell him to breathe deeply through his mouth and nose for 5 to 10 minutes. Repeat several times a day. 3)Have him sip chicken broth or warm tea with honey. Don’t give honey to a child under 12 months of age."],
+         "context_set": ""
+        },
+
+        {"tag": "Gastrointestinal problems",
+         "patterns": ["How do you treat gas problems?", "what to do if i have Gastrointestinal problems?", "Which medicine to take if I get gas problem?", "How to cure Gas problems?"],
+         "responses": ["1) Replenish body fluids 2)Do not take antidiarrheal drugs or laxatives or pain medication, unless specified by a medical professional.3)Taking antacids may help, per recommendation of a healthcare professional. 4)If prone to frequent heartburns, seek medical help. 5)Taking meals that are not spicy regularly, can relieve ulcer pains. 6)Seek medical help, if conditions persist or continue to worsen"],
+         "context_set": ""
+        },
+
+        {"tag": "Skin problems",
+         "patterns": ["How do you treat Skin problems?", "what to do if i get a skin allergy?", "Which medicine to take if I get a skin allergy?", "How to cure skin allergy?"],
+         "responses": ["1)Hydrocortisone cream. 2)Ointments like calamine lotion. 3)Antihistamines. 4)Cold compresses. 5)Oatmeal baths. 6)Talk to your doctor about what's best for your specific rash."],
+         "context_set": ""
+        },
+
+        {"tag": "Abdonominal Pain",
+         "patterns": ["How do you treat Abdonominal Pain?", "what to do if i get a Abdonominal Pain?", "Which medicine to take if I get a Abdonominal Pain?", "How to cure Abdonominal Pain?"],
+         "responses": ["1)Provide clear fluids to sip, such as water, broth, or fruit juice diluted with water. 2)Serve bland foods, such as saltine crackers, plain bread, dry toast, rice, gelatin, or applesauce. 3)Avoid spicy or greasy foods and caffeinated or carbonated drinks until 48 hours after all symptoms have gone away. "],
+         "context_set": ""
+        },
+
+        {"tag": "Bruises",
+         "patterns": ["How do you treat Bruises?", "what to do if i get a Bruise?", "Which medicine to take if I get a Bruise?", "How to cure Bruises?"],
+         "responses": ["1)Ice the bruise with an ice pack wrapped in a towel. 2)Leave it in place for 10 to 20 minutes. 3)Repeat several times a day for a day or two as needed. 4)Compress the bruised area if it is swelling, using an elastic bandage. "],
+         "context_set": ""
+        },
+
+        {"tag": "Broken Toe",
+         "patterns": ["How do you treat a Broken Toe?", "what to do if i get a Broken Toe?", "Which medicine to take if I get a Broken Toe?", "How to cure Broken Toe?"],
+         "responses": ["1)To help decrease pain and swelling in a broken toe, elevate the foot, ice the injury, and stay off the foot. 2)Depending on the severity of the fracture, the toe may need to be put back into place (reduced), and some compound toe fractures may require surgery.3) Most broken toes heal without complications in six weeks."],
+         "context_set": ""
+        },
+
+        {"tag": "Choking",
+         "patterns": ["How do you treat Choking?", "what to do if i get a Choke?", "Which medicine to take if I get Choked?", "How to cure Choking?"],
+         "responses": ["1)Encourage them to keep coughing to try to clear the blockage. 2)Ask them to try to spit out the object if it's in their mouth. 3)If coughing doesn't work, start back blows and Abdonominal thrusts"],
+         "context_set": ""
+        },
+
+        {"tag": "Wound",
+         "patterns": ["How do you treat a wound?", "what to do if i get a Wound?", "Which medicine to take if I get wounded?", "How to cure a wound?"],
+         "responses": ["1)Rinse the cut or wound with water and apply pressure with sterile gauze, a bandage, or a clean cloth. 2)If blood soaks through the bandage, place another bandage on top of the first and keep applying pressure. 3)Raise the injured body part to slow bleeding. 4)When bleeding stops, cover the wound with a new, clean bandage."],
+         "context_set": ""
+        },
+
+        {"tag": "Diarrhea",
+         "patterns": ["How do you treat Diarrhea?", "what to do if i get Diarrhea?", "Which medicine to take if I get Diarrhea?", "How to cure Diarrhea?"],
+         "responses": ["1)Hydrating the body is essential for recovering from diarrhea.This causes the body to lose electrolytes such as sodium and chloride. 2)It is highly recommended to avoid dairy products, as they may worsen diarrhea in some people. 3)However, if diarrhea lasts for more than 2 days, seek medical advice to avoid complications."],
+         "context_set": ""
+        },
+
+        {"tag": "Frost bite",
+         "patterns": ["How do you treat a Frost bite?", "what to do if i get a Frost bite?", "Which medicine to take if I get a Frost bite?", "How to cure Frost bite?"],
+         "responses": ["1)Get out of the cold. Once you're in a warm space, remove wet clothes and wrap up in a warm blanket. 2) Gently rewarm frostbitten areas. Soak frostbitten fingers, toes or other extremities in warm water — 105 to 110 F (about 40 to 43 C). If a thermometer isn't available, test the water by placing an uninjured hand or elbow in it — it should feel very warm, not hot. Soak for 20 to 30 minutes or until the skin becomes its normal color or loses its numbness. For the face or ears, apply a warm, wet washcloth. "],
+         "context_set": ""
+        },
+
+        {"tag": "Heat Exhaustion",
+         "patterns": ["How do you treat Heat Exhaustion?", "what to do if i feel Exhausted due to heat?", "Which medicine to take if I get Exhausted?", "How to cure Heat Exhaustion?"],
+         "responses": ["1)Move the person out of the heat and into a shady or air-conditioned place. Lay the person down and elevate the legs and feet slightly. Remove tight or heavy clothing. Have the person drink cool water or other nonalcoholic beverage without caffeine "],
+         "context_set": ""
+        },
+
+        {"tag": "Heat Stroke",
+         "patterns": ["How do you treat Heat Stroke?", "what to do if i get a Heat Stroke?", "Which medicine to take if I get Stroke?", "How to cure a Heat Stroke?"],
+         "responses": ["1)Cool the person's entire body by sponging or spraying cold water, and fan the person to help lower the person's body temperature. Watch for signs of rapidly progressing heatstroke, such as seizure, unconsciousness for longer than a few seconds, and moderate to severe difficulty breathing. "],
+         "context_set": ""
+        },
+
+        {"tag": "Insect Bites",
+         "patterns": ["How do you treat a Insect Bite?", "what to do if a insect bites me?", "Which medicine to take if I get bitten by a insect?", "How to cure insect bite?"],
+         "responses": ["1) Wash the affected area with soap and water. Apply a cold compress (such as a flannel or cloth cooled with cold water) or an ice pack to any swelling for at least 10 minutes. Raise or elevate the affected area if possible, as this can help reduce swelling. "],
+         "context_set": ""
+        },
+
+        {"tag": "nose bleed",
+         "patterns": ["How do you treat a bleeding nose?", "what to do if i my nose is bleeding?", "Which medicine to take if I get nose bleed?", "How to cure nose bleeding?"],
+         "responses": ["1) Wash the affected area with soap and water. Apply a cold compress (such as a flannel or cloth cooled with cold water) or an ice pack to any swelling for at least 10 minutes. Raise or elevate the affected area if possible, as this can help reduce swelling "],
+         "context_set": ""
+        },
+
+        {"tag": "Pulled Muscle",
+         "patterns": ["How do you treat a Pulled Muscle?", "what to do if my muscle is pulled?", "Which medicine to take if I got pulled muscle?", "How to cure a pulled muscle?"],
+         "responses": ["1) Apply ice for 10 to 15 minutes every 1 hour for the first day and every 3 to 4 hours after that. Use ice for the first 3 days. After 3 days, either heat or ice may be helpful if you still have pain. Rest the pulled muscle for at least a day. "],
+         "context_set": ""
+        },
+
+        {"tag": "Rectal bleeding",
+         "patterns": ["How do you treat Rectal Bleeding?", "what to do if i get a Rectal Bleeding?", "Which medicine to take if I get Rectal Bleeding?", "How to cure Rectal Bleeding?"],
+         "responses": ["1) For minimal bleeding due to hemorrhoids or rectal fissures, physicians will usually direct home treatment with lots of water, ice packs and possibly over the counter ointments or suppositories to create movement in the bowels or to soften the stool. Emergency treatment might include an IV in the case of dehydration. "],
+         "context_set": ""
+        },
+
+        {"tag": "Sun Burn",
+         "patterns": ["How do you treat Sun Burn?", "what to do if i get a Sun Burn?", "Which medicine to take if I get Sun Burn?", "How to cure a Sun Burn?"],
+         "responses": ["1) Cool the skin, 2) Drink water to prevent dehydration., 3) Take a pain reliever such as ibuprofen (Advil, Motrin IB, others) to help with the discomfort and swelling of sunburn. "],
+         "context_set": ""
+        },
+
+        {"tag": "Testicle Pain",
+         "patterns": ["How do you treat Testicle Pain?", "what to do if i get a Testicle Pain?", "Which medicine to take if I get a Testicle Pain?", "How to cure Testicle Pain?"],
+         "responses": ["1) For pain, take over-the-counter medication such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin). For swelling, apply an ice pack to the scrotum. "],
+         "context_set": ""
+        },
+
+        {"tag": "Vertigo",
+         "patterns": ["How do you treat a Vertigo?", "what to do if i get a Vertigo?", "Which medicine to take if I get Vertigo?", "How to cure a Vertigo?"],
+         "responses": ["1) Relieve or Prevent Dizziness. Have the person lie down and rest, 2) Keep the Person Safe. Help the person avoid falls, 3) Call a Health Care Provider. Any new signs and symptoms of vertigo should be checked by a health care provider."],
+         "context_set": ""
+        },
+
+        {"tag": "Normal Bleeding",
+         "patterns": ["How do you treat bleeding?", "what to do if i get a Bleeding?", "Which medicine to take if I get bleeding?", "How to cure Bleeding?"],
+         "responses": ["1) First aid actions to manage external bleeding include applying direct pressure to the wound, maintaining the pressure using pads and bandages, and, raising the injured limb above the level of the heart if possible. "],
+         "context_set": ""
+        },
+
+        {"tag": "Eye Injury",
+         "patterns": ["How do you treat an eye Injury?", "what to do if i get a eye Injury?", "Which medicine to take if I injured my eye?", "How to cure injured eye?"],
+         "responses": ["1) DO NOT rub the eye, 2)Blink several times and allow tears to flush out the particle, 3) Lift the upper eyelid over the lashes of your lower lid to let the eyelashes try to brush the particle out., 4) Use eyewash, saline solution or running tap water to flush the eye out "],
+         "context_set": ""
+        },
+
+        {"tag": "Chemical Burn",
+         "patterns": ["How do you treat a chemical burn?", "what to do if i get a Chemical Burn?", "Which medicine to take if I get burn due to chemicals?", "How to cure Chemical Burn?"],
+         "responses": ["1) rinsed with water · Flush the area for at least 20 minutes. · As you flush the area, take off any clothing or jewellery that has the chemical on it ,2) Don't use a strong stream of water, if possible., 3)Don't try to neutralize the burn with acid or alkali. This could cause a chemical reaction that worsens the burn, 4) Don't put antibiotic ointment on the burn. "],
+         "context_set": ""
+        },
+
+        {"tag": "Poison",
+         "patterns": ["How do you treat a Poison?", "what to do if i get Poison?", "Which medicine to take if I am poisoned?", "How to cure Poisoning?"],
+         "responses": ["1) Get to fresh air right away. Call the toll-free Poison Help line (1-800-222-1222), which connects you to your local poison center, 2) Take off any clothing the poison touched. Rinse skin with running water for 15 to 20 minutes. Call the toll-free Poison Help line (1-800-222-1222), which connects you to your local poison center.,3) If the person swallowed the wrong medicine or too much medicine: Call Poison Help (1-800-222-1222), which connects you to your local poison center.,4) Every poisoning is different. "],
+         "context_set": ""
+        },
+
+        {"tag": "Teeth",
+         "patterns": ["How do you treat broken Teeth ?", "what to do if my Teeth got broken?", "Which medicine to take if I get broken teeth?", "cure broken teeth?"],
+         "responses": ["1) lick the tooth clean if it's dirty, or rinse it in water. put it back into position (adult teeth only); never try to re-insert a baby tooth (see below) bite on a handkerchief to hold the tooth in place. go to see a dentist as an emergency "],
+         "context_set": ""
+        },
+
+        {"tag": "seizure",
+         "patterns": ["How do you treat a seizure?", "what to do if i get a seizure?", "Which medicine to take if I get seizure?", "How to cure seizure?"],
+         "responses": ["1) Stay calm and remain with the person, 2) If they have food or fluid in their mouth, roll them onto their side immediately, 3) Place something soft under their head and loosen any tight clothing. "],
+         "context_set": ""
+        },
+
+        {"tag": "Head Injury",
+         "patterns": ["How do you treat a head Injury?", "what to do if i get a Head Injury?", "Which medicine to take if I get injured in the head?", "How to cure Head Injury?"],
+         "responses": ["1) Apply firm pressure to the wound with sterile gauze or a clean cloth. But don't apply direct pressure to the wound if you suspect a skull fracture. "],
+         "context_set": ""
+        },
+
+        {"tag": "Fainting",
+         "patterns": ["How do you treat Faint?", "what to do if i feel like Fainting?", "Which medicine to take if I get a Faint?", "How to cure Fainting?"],
+         "responses": ["1) Lie down or sit down. To reduce the chance of fainting again, don't get up too quickly, 2) Place your head between your knees if you sit down, 3)Position the person on his or her back. If there are no injuries and the person is breathing, raise the person's legs above heart level — about 12 inches (30 centimeters) — if possible. Loosen belts, collars or other constrictive clothing. "],
+         "context_set": ""
+        },
+
+        {"tag": "Headache",
+         "patterns": ["How do you treat a mild Headache?", "what to do if i get a mild Headache?", "Which medicine to take if I have a mild headache?", "How to cure a mild headache?"],
+         "responses": ["Give ibuprofen (Advil, Motrin), aspirin, or acetaminophen (Tylenol) for pain. Avoid ibuprofen and other NSAIDs if the person has heart failure or kidney failure. Do not give aspirin to a child under age 18."],
+         "context_set": ""
+        },
+
+	{"tag": "Cold",
+         "patterns": ["How do you treat a Cold?", "what to do if i get a mild Cold?", "Which medicine to take if I have a Cold?", "How to cure Cold?"],
+          "responses": [
+    "1) Keeping hydrated is absolutely vital to help 'flush' out the cold, as well as to break down congestion and keep your throat lubricated.",
+    "2) Vitamin C is extremely helpful when fighting infection, so at the first sign of a cold be sure to increase your intake by eating plenty of berries, citrus fruits, papayas, broccoli, and red peppers which will help keep you protected.",
+    "3) When it comes to combating a cold, Vitamin D is essential in helping to regulate immune response.",
+    "When considering medications for cold, over-the-counter options such as ibuprofen, acetaminophen, or decongestants can help alleviate symptoms such as fever, pain, and congestion. Antihistamines may also help with sneezing and runny nose. However, it's important to consult with a healthcare professional or pharmacist before taking any medication, especially if you have underlying health conditions or are taking other medications."
+  ],
+         "context_set": ""
+        },
+	
+	{"tag": "Rash",
+         "patterns": ["How do you treat Rashes?", "what to do if i get a Rash?", "Which medicine to take if I have a Rash?", "How to cure Rash?"],
+         "responses": ["1)Olive oil helps in healing and promotes skin renewal given it is packed with vitamin E and antioxidants. It also soothes the skin and reduces itching. 2)Baking soda is useful in drying skin rashes as also in relieving itching and inflammation. 3)Aloe Vera,Thanks to its antibacterial, antifungal, anti-inflammatory and emollient properties, aloe vera is excellent for treating a number of skin ailments including rashes as also soothing the skin."],
+         "context_set": ""
+        },
+	
+	{"tag": "snake bite",
+         "patterns": ["How do you treat a snake bite?", "what to do if i get a snake bite?", "Which medicine to take if I get a snake bite?", "How to cure snake bite?", "i got bit by a snake"],
+         "responses": ["While waiting for medical help: 1)Move the person beyond striking distance of the snake. 2)Have the person lie down with wound below the heart. 3)Keep the person calm and at rest, remaining as still as possible to keep venom from spreading. 4)Cover the wound with loose, sterile bandage. 5)Remove any jewelry from the area that was bitten. 6)Remove shoes if the leg or foot was bitten."],
+         "context_set": ""
+        },
+
+	{"tag": "animal bite",
+         "patterns": ["How do you treat a animal bite?", "How do you treat a monkey bite?","How do you treat a dog bite?", "what to do if i get a animal bite?", "Which medicine to take if I get a monekey bite?", "How to cure dog bite?", "i got bit by a dog"],
+         "responses": ["1)Wash the wound with soap and warm water. 2)Gently press a clean cloth over the wound to stop the flow of blood. 3)Apply an antibacterial ointment to the wound. 4)Cover with a sterile bandage. 5)Watch for signs of infection. 6)Seek help if you suspect infection or possible exposure to rabies, or if the wound is severe."],
+         "context_set": ""
+        },
+
+	{"tag": "Drowning",
+         "patterns": ["What to do if someone is Drowning?", "what to do if someone drowned?", "What steps to take if i see a drowning person?", "How to help a drowning person?"],
+         "responses": ["1)Place your ear next to the person's mouth and nose. Do you feel air on your cheek? 2)Look to see if the person's chest is moving.If the Person is Not Breathing, Check Pulse. 3)Check the person's pulse for 10 seconds.If There is No Pulse, Start CPR."],
+         "context_set": ""
+        },
+
+    {"tag": "CPR",
+         "patterns": ["How to give CPR??", "what to do in a CPR?", "What steps to take in a CPR??", "How to help a drowning person in CPR?"],
+         "responses": ["1)For an adult or child, place the heel of one hand on the center of the chest at the nipple line. You can also push with one hand on top of the other. For an infant, place two fingers on the breastbone. 2)For an adult or child, press down at least 2 inches. Make sure not to press on ribs. For an infant, press down about 1 and 1/2 inches. Make sure not to press on the end of the breastbone. 3)Do chest compressions only, at the rate of 100-120 per minute or more. Let the chest rise completely between pushes. 4)Check to see if the person has started breathing."],
+         "context_set": ""
+        },
+{
+  "tag": "vomiting",
+  "patterns": [
+    "How do you treat vomiting?",
+    "What should I do if I'm vomiting?",
+    "How to stop vomiting?",
+    "Remedies for vomiting",
+    "How can I relieve vomiting?"
+  ],
+  "responses": [
+    "When experiencing vomiting, it's important to focus on hydration and rest. Here are some steps you can take:\n\n1) Stay Hydrated: Sip on clear fluids such as water, ginger ale, or electrolyte drinks to prevent dehydration.\n2) BRAT Diet: Consider following the BRAT diet (bananas, rice, applesauce, toast) to help settle your stomach.\n3) Avoid Triggers: Stay away from spicy, greasy, or heavy foods that may exacerbate vomiting.\n4) Medications: Over-the-counter antiemetic medications such as dimenhydrinate (Dramamine) or bismuth subsalicylate (Pepto-Bismol) may help reduce nausea and vomiting.\n5) Rest: Get plenty of rest in a comfortable position to allow your body to recover.\n6) Seek Medical Attention: If vomiting persists for more than 24 hours, is accompanied by severe abdominal pain, dehydration symptoms (such as dry mouth, dark urine, or dizziness), or if you suspect food poisoning, it's important to seek medical attention."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "diarrhea",
+  "patterns": [
+    "How do you treat diarrhea?",
+    "What should I do if I have diarrhea?",
+    "How to stop diarrhea?",
+    "Remedies for diarrhea",
+    "How can I relieve diarrhea?"
+  ],
+  "responses": [
+    "When experiencing diarrhea, it's essential to focus on hydration and dietary adjustments. Here are some steps you can take:\n\n1) Stay Hydrated: Drink plenty of clear fluids such as water, broth, or oral rehydration solutions to replace lost fluids and electrolytes.\n2) BRAT Diet: Consider following the BRAT diet (bananas, rice, applesauce, toast) to help firm up stools and ease digestion.\n3) Avoid Triggers: Stay away from spicy, greasy, or high-fiber foods that may worsen diarrhea.\n4) Medications: Over-the-counter antidiarrheal medications such as loperamide (Imodium) or bismuth subsalicylate (Pepto-Bismol) may help alleviate symptoms.\n5) Probiotics: Consuming probiotic-rich foods or supplements may aid in restoring the balance of beneficial gut bacteria.\n6) Rest: Give your digestive system time to recover by getting plenty of rest.\n7) Seek Medical Attention: If diarrhea persists for more than a few days, is accompanied by severe abdominal pain, fever, or dehydration symptoms (such as dry mouth, dark urine, or dizziness), it's crucial to seek medical attention."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "common_cold",
+  "patterns": [
+    "How do you treat a common cold?",
+    "What should I do if I have a cold?",
+    "Remedies for common cold",
+    "How can I relieve cold symptoms?"
+  ],
+  "responses": [
+    "1) Stay Hydrated: Drink plenty of fluids such as water, herbal tea, or broth to help loosen congestion and prevent dehydration.\n2) Rest: Get plenty of rest to allow your body to fight off the virus.\n3) Humidify the Air: Use a humidifier or take a steamy shower to ease congestion and soothe a sore throat.\n4) Over-the-Counter Medications: Consider using over-the-counter cold medications such as decongestants, antihistamines, or pain relievers to alleviate symptoms.\n5) Saltwater Gargle: Gargle with warm salt water to relieve a sore throat.\n6) Honey and Lemon: Mix honey and lemon in warm water or tea to soothe a sore throat and suppress coughing.\n7) Nasal Saline Rinse: Use a saline nasal spray or rinse to clear nasal passages and reduce congestion.\n8) Herbal Remedies: Consider using herbal remedies such as echinacea or elderberry syrup, which may help boost the immune system.\n9) Avoid Smoking and Secondhand Smoke: Smoking and exposure to secondhand smoke can worsen cold symptoms and prolong recovery.\n10) See a Doctor: If cold symptoms persist for more than a week, are severe, or accompanied by a high fever, it's important to consult a healthcare provider."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "headache",
+  "patterns": [
+    "How do you treat a headache?",
+    "What should I do if I have a headache?",
+    "Remedies for headaches",
+    "How can I relieve headache pain?"
+  ],
+  "responses": [
+    "1) Rest in a Quiet, Dark Room: Lie down in a quiet, dark room to help alleviate headache pain.\n2) Hydrate: Drink plenty of water to stay hydrated, as dehydration can sometimes trigger headaches.\n3) Apply a Cold Compress: Place a cold compress or ice pack wrapped in a cloth on your forehead or neck to numb the pain and constrict blood vessels.\n4) Use Over-the-Counter Pain Relievers: Consider using over-the-counter pain relievers such as acetaminophen, ibuprofen, or aspirin to alleviate headache pain.\n5) Practice Relaxation Techniques: Try relaxation techniques such as deep breathing, meditation, or progressive muscle relaxation to reduce stress and tension.\n6) Get Adequate Sleep: Ensure you're getting enough sleep each night, as sleep deprivation can contribute to headaches.\n7) Limit Caffeine and Alcohol: Reduce your intake of caffeine and alcohol, as they can sometimes trigger headaches.\n8) Massage: Gently massage your temples, neck, and shoulders to help relax tense muscles and ease headache pain.\n9) Identify and Avoid Triggers: Keep a headache diary to identify triggers such as certain foods, stress, or environmental factors, and try to avoid them.\n10) Consult a Doctor: If headaches are severe, frequent, or accompanied by other symptoms such as vision changes or neurological symptoms, it's important to seek medical advice."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "nausea_vomiting",
+  "patterns": [
+    "How do you treat nausea and vomiting?",
+    "What should I do if I'm nauseous and vomiting?",
+    "Remedies for nausea and vomiting",
+    "How can I relieve nausea and vomiting?"
+  ],
+  "responses": [
+    "1) Stay Hydrated: Sip clear fluids such as water, ginger ale, or electrolyte solutions to stay hydrated and prevent dehydration.\n2) Eat Small, Bland Meals: Eat small, bland meals such as crackers, toast, or bananas to help settle your stomach.\n3) Avoid Strong Odors and Trigger Foods: Stay away from strong odors, spicy, greasy, or acidic foods that may worsen nausea.\n4) Ginger: Try consuming ginger in various forms such as ginger tea, ginger ale, or ginger candies, as ginger has natural anti-nausea properties.\n5) Rest: Get plenty of rest and avoid strenuous activity to help your body recover.\n6) Acupressure: Apply pressure to the P6 acupressure point on your wrist, also known as the Nei-Kuan point, to alleviate nausea.\n7) Medications: Consider using over-the-counter medications such as dimenhydrinate (Dramamine) or meclizine (Bonine) to help reduce nausea and vomiting.\n8) Peppermint: Try consuming peppermint tea or sucking on peppermint candies to soothe the stomach and reduce nausea.\n9) Deep Breathing: Practice deep breathing exercises to help relax your body and alleviate nausea.\n10) Consult a Doctor: If nausea and vomiting persist for more than 24 hours, are severe, or accompanied by other symptoms such as fever or abdominal pain, it's important to seek medical advice."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "fever",
+  "patterns": [
+    "How do you treat a fever?",
+    "What should I do if I have a fever?",
+    "Remedies for fever",
+    "How can I reduce fever?"
+  ],
+  "responses": [
+    "1) Stay Hydrated: Drink plenty of clear fluids such as water, herbal tea, or electrolyte solutions to stay hydrated and prevent dehydration.\n2) Rest: Get plenty of rest to help your body recover and fight off infection.\n3) Use Fever-Reducing Medications: Consider using over-the-counter fever reducers such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin) to lower your body temperature and alleviate discomfort.\n4) Cool Compress: Place a cool, damp washcloth on your forehead or take a lukewarm bath to help reduce fever.\n5) Dress Lightly: Wear lightweight, breathable clothing to help your body cool down.\n6) Room Temperature: Keep your room at a comfortable temperature, neither too hot nor too cold.\n7) Hydration Methods: Consider other hydration methods such as sucking on ice chips or drinking electrolyte-rich beverages like sports drinks.\n8) Monitor Temperature: Regularly monitor your temperature to track changes and ensure it's decreasing.\n9) Seek Medical Attention: If fever persists for more than a few days, is accompanied by severe symptoms, or occurs in infants, young children, or individuals with compromised immune systems, it's important to seek medical advice."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "stomach_flu",
+  "patterns": [
+    "How do you treat stomach flu (gastroenteritis)?",
+    "What should I do if I have stomach flu?",
+    "Remedies for stomach flu",
+    "How can I relieve symptoms of stomach flu?"
+  ],
+  "responses": [
+    "1) Stay Hydrated: Drink clear fluids such as water, broth, or electrolyte solutions to prevent dehydration.\n2) BRAT Diet: Follow the BRAT diet (bananas, rice, applesauce, toast) to help ease digestion and reduce symptoms.\n3) Rest: Get plenty of rest to help your body recover and conserve energy.\n4) Avoid Trigger Foods: Stay away from spicy, greasy, or high-fiber foods that may worsen symptoms.\n5) Medications: Consider using over-the-counter medications such as anti-diarrheal drugs or anti-nausea medications to alleviate symptoms.\n6) Oral Rehydration Solutions: Drink oral rehydration solutions to replace lost fluids and electrolytes.\n7) Probiotics: Consume probiotic-rich foods or supplements to help restore the balance of beneficial gut bacteria.\n8) Avoid Alcohol and Caffeine: Stay away from alcohol and caffeine, as they can worsen dehydration.\n9) Monitor Symptoms: Keep track of symptoms such as fever, diarrhea, and vomiting, and seek medical attention if they persist or worsen.\n10) Seek Medical Advice: If symptoms are severe, persistent, or accompanied by other concerning symptoms such as high fever or bloody stools, it's important to consult a healthcare provider."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "allergies",
+  "patterns": [
+    "How do you treat allergies?",
+    "What should I do if I have allergies?",
+    "Remedies for allergies",
+    "How can I relieve allergy symptoms?"
+  ],
+  "responses": [
+    "1) Avoid Allergens: Identify and avoid triggers such as pollen, dust mites, pet dander, or certain foods that may cause allergic reactions.\n2) Medications: Use over-the-counter antihistamines, decongestants, or nasal sprays to alleviate allergy symptoms.\n3) Allergy Shots: Consider allergy shots (immunotherapy) to help desensitize your immune system to specific allergens.\n4) Nasal Irrigation: Use a saline nasal rinse or nasal irrigation system to clear nasal passages and reduce congestion.\n5) Air Purifiers: Use high-efficiency particulate air (HEPA) filters in your home to remove allergens from the air.\n6) Keep Windows Closed: Keep windows closed during high pollen seasons to prevent allergens from entering your home.\n7) Wear Protective Gear: Wear a mask, gloves, or goggles when gardening or performing activities that may expose you to allergens.\n8) Steam Inhalation: Inhale steam from a bowl of hot water or a hot shower to help relieve congestion and loosen mucus.\n9) Stay Indoors: Limit outdoor activities during peak pollen times, such as early morning and late afternoon.\n10) Consult an Allergist: If allergy symptoms are severe, persistent, or interfere with daily activities, it's important to consult an allergist for evaluation and treatment."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "uti",
+  "patterns": [
+    "How do you treat a urinary tract infection (UTI)?",
+    "What should I do if I have a UTI?",
+    "Remedies for UTI",
+    "How can I relieve UTI symptoms?"
+  ],
+  "responses": [
+    "1) Drink Plenty of Water: Stay hydrated by drinking plenty of water to help flush bacteria out of your urinary tract.\n2) Urinate Frequently: Urinate frequently and completely to help eliminate bacteria from your bladder.\n3) Cranberry Juice: Consider drinking cranberry juice or taking cranberry supplements, as they may help prevent bacteria from sticking to the walls of your urinary tract.\n4) Over-the-Counter Pain Relievers: Use over-the-counter pain relievers such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin) to alleviate pain and discomfort.\n5) Heating Pad: Apply a heating pad to your abdomen to help relieve bladder pressure and discomfort.\n6) Antibiotics: If diagnosed with a UTI, take prescribed antibiotics as directed by your healthcare provider to kill the bacteria causing the infection.\n7) Avoid Irritants: Stay away from irritants such as caffeine, alcohol, spicy foods, and acidic foods that may worsen UTI symptoms.\n8) Wear Loose, Breathable Clothing: Wear loose-fitting, breathable clothing to help prevent moisture buildup and bacterial growth.\n9) Empty Your Bladder After Intercourse: Urinate shortly after sexual intercourse to help flush bacteria out of your urinary tract.\n10) Consult a Doctor: If UTI symptoms persist or worsen despite home remedies, it's important to consult a healthcare provider for evaluation and treatment."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "influenza",
+  "patterns": [
+    "How do you treat influenza (flu)?",
+    "What should I do if I have the flu?",
+    "Remedies for flu",
+    "How can I relieve flu symptoms?"
+  ],
+  "responses": [
+    "1) Rest: Get plenty of rest to help your body recover and conserve energy.\n2) Hydration: Drink plenty of fluids such as water, herbal tea, or electrolyte solutions to prevent dehydration.\n3) Fever-Reducing Medications: Use over-the-counter fever reducers such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin) to lower fever and alleviate body aches.\n4) Warm Compress: Apply a warm compress to your forehead or sore muscles to help relieve pain and discomfort.\n5) Gargle with Saltwater: Gargle with warm salt water to soothe a sore throat and reduce inflammation.\n6) Chicken Soup: Enjoy chicken soup or other warm, nourishing foods to help boost your immune system and provide comfort.\n7) Nasal Saline Rinse: Use a saline nasal spray or rinse to clear nasal passages and reduce congestion.\n8) Herbal Remedies: Consider using herbal remedies such as elderberry syrup or echinacea supplements, which may help boost the immune system.\n9) Avoid Contact with Others: Stay home from work, school, or other activities to avoid spreading the flu to others.\n10) Consult a Doctor: If flu symptoms are severe, persist for more than a few days, or are accompanied by complications such as difficulty breathing or chest pain, it's important to seek medical attention."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "influenza",
+  "patterns": [
+    "How do you treat influenza (flu)?",
+    "What should I do if I have the flu?",
+    "Remedies for flu",
+    "How can I relieve flu symptoms?"
+  ],
+  "responses": [
+    "1) Rest: Get plenty of rest to help your body recover and conserve energy.\n2) Hydration: Drink plenty of fluids such as water, herbal tea, or electrolyte solutions to prevent dehydration.\n3) Fever-Reducing Medications: Use over-the-counter fever reducers such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin) to lower fever and alleviate body aches.\n4) Warm Compress: Apply a warm compress to your forehead or sore muscles to help relieve pain and discomfort.\n5) Gargle with Saltwater: Gargle with warm salt water to soothe a sore throat and reduce inflammation.\n6) Chicken Soup: Enjoy chicken soup or other warm, nourishing foods to help boost your immune system and provide comfort.\n7) Nasal Saline Rinse: Use a saline nasal spray or rinse to clear nasal passages and reduce congestion.\n8) Herbal Remedies: Consider using herbal remedies such as elderberry syrup or echinacea supplements, which may help boost the immune system.\n9) Avoid Contact with Others: Stay home from work, school, or other activities to avoid spreading the flu to others.\n10) Consult a Doctor: If flu symptoms are severe, persist for more than a few days, or are accompanied by complications such as difficulty breathing or chest pain, it's important to seek medical attention."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "heartburn",
+  "patterns": [
+    "How do you treat heartburn (acid reflux)?",
+    "What should I do if I have heartburn?",
+    "Remedies for heartburn",
+    "How can I relieve heartburn symptoms?"
+  ],
+  "responses": [
+    "1) Antacids: Use over-the-counter antacids such as Tums or Rolaids to neutralize stomach acid and relieve heartburn symptoms.\n2) Avoid Trigger Foods: Stay away from trigger foods that may worsen heartburn, such as spicy, greasy, or acidic foods.\n3) Eat Smaller Meals: Opt for smaller, more frequent meals to prevent overeating and reduce pressure on the stomach.\n4) Avoid Lying Down After Eating: Stay upright for at least two to three hours after eating to prevent stomach acid from flowing back into the esophagus.\n5) Elevate the Head of Your Bed: Raise the head of your bed by six to eight inches to prevent nighttime heartburn.\n6) Wear Loose Clothing: Avoid wearing tight-fitting clothing that puts pressure on your abdomen and may worsen heartburn.\n7) Don't Smoke: Smoking can increase the risk of heartburn, so it's important to quit smoking if you're a smoker.\n8) Maintain a Healthy Weight: Excess weight can put pressure on the abdomen and worsen heartburn, so aim to maintain a healthy weight.\n9) Chew Gum: Chew sugar-free gum after meals to increase saliva production and help neutralize stomach acid.\n10) Consult a Doctor: If heartburn symptoms persist for more than two weeks despite home remedies, it's important to consult a healthcare provider for evaluation and treatment."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "sunburn",
+  "patterns": [
+    "How do you treat sunburn?",
+    "What should I do if I have a sunburn?",
+    "Remedies for sunburn",
+    "How can I relieve sunburn pain?"
+  ],
+  "responses": [
+    "1) Cool Bath or Shower: Take a cool bath or shower to soothe sunburned skin and help reduce inflammation.\n2) Moisturize: Apply aloe vera gel or a moisturizing lotion to sunburned skin to help hydrate and soothe.\n3) Hydration: Drink plenty of water to stay hydrated and help your body recover from sunburn.\n4) Over-the-Counter Pain Relievers: Use over-the-counter pain relievers such as ibuprofen or aspirin to alleviate pain and reduce inflammation.\n5) Avoid Further Sun Exposure: Stay out of the sun until your sunburn heals to prevent further damage to your skin.\n6) Loose Clothing: Wear loose, breathable clothing to avoid further irritation of sunburned skin.\n7) Cool Compresses: Apply cool compresses or ice packs wrapped in a cloth to sunburned areas to help reduce pain and inflammation.\n8) Stay Indoors: Avoid outdoor activities during peak sun hours to prevent further sun exposure.\n9) Don't Pop Blisters: If blisters develop, don't pop them, as this can increase the risk of infection and delay healing.\n10) Consult a Doctor: If sunburn is severe, covers a large area of the body, or is accompanied by symptoms such as fever or chills, it's important to seek medical attention."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "insomnia",
+  "patterns": [
+    "How do you treat insomnia?",
+    "What should I do if I have trouble sleeping?",
+    "Remedies for insomnia",
+    "How can I improve sleep quality?"
+  ],
+  "responses": [
+    "1) Establish a Sleep Routine: Go to bed and wake up at the same time every day, even on weekends, to regulate your body's internal clock.\n2) Create a Relaxing Bedtime Ritual: Engage in calming activities before bedtime, such as reading, listening to soothing music, or taking a warm bath.\n3) Limit Stimulants: Avoid caffeine, nicotine, and alcohol close to bedtime, as they can interfere with sleep.\n4) Create a Comfortable Sleep Environment: Make sure your bedroom is cool, dark, and quiet, and invest in a comfortable mattress and pillows.\n5) Limit Screen Time: Avoid screens such as smartphones, computers, and televisions at least an hour before bedtime, as blue light can disrupt sleep.\n6) Exercise Regularly: Engage in regular physical activity during the day, but avoid vigorous exercise close to bedtime.\n7) Manage Stress: Practice stress-reduction techniques such as deep breathing, meditation, or progressive muscle relaxation to help calm the mind and body before bedtime.\n8) Limit Naps: Avoid long naps during the day, as they can interfere with nighttime sleep.\n9) Cognitive Behavioral Therapy: Consider cognitive behavioral therapy for insomnia (CBT-I) with a qualified therapist, as it has been shown to be effective in treating chronic insomnia.\n10) Consult a Doctor: If insomnia persists for more than a few weeks and significantly impacts your daily life, it's important to consult a healthcare provider for evaluation and treatment."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "asthma",
+  "patterns": [
+    "How do you treat asthma?",
+    "What should I do if I have asthma?",
+    "Remedies for asthma",
+    "How can I manage asthma symptoms?"
+  ],
+  "responses": [
+    "1) Use Inhalers: Use prescribed inhalers, including bronchodilators (such as albuterol) to open up airways and corticosteroids to reduce inflammation.\n2) Follow Asthma Action Plan: Follow an asthma action plan provided by your healthcare provider, which includes steps for managing symptoms and when to seek emergency care.\n3) Identify and Avoid Triggers: Identify and avoid triggers that may worsen asthma symptoms, such as allergens, smoke, pollution, or cold air.\n4) Monitor Peak Flow: Use a peak flow meter to monitor lung function and identify changes that may indicate worsening asthma.\n5) Stay Active: Engage in regular physical activity, as it can help improve lung function and overall health.\n6) Maintain Healthy Weight: Maintain a healthy weight, as obesity can worsen asthma symptoms.\n7) Keep Rescue Medication Handy: Carry a rescue inhaler with you at all times for quick relief of asthma symptoms.\n8) Use Air Purifiers: Use air purifiers with HEPA filters in your home to remove allergens and other irritants from the air.\n9) Get Vaccinated: Stay up-to-date on vaccinations, including annual flu shots and pneumococcal vaccines, to reduce the risk of respiratory infections.\n10) Consult a Doctor: If asthma symptoms are severe, persistent, or interfere with daily activities, it's important to consult a healthcare provider for evaluation and treatment."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "arthritis",
+  "patterns": [
+    "How do you treat arthritis?",
+    "What should I do if I have arthritis?",
+    "Remedies for arthritis",
+    "How can I manage arthritis pain?"
+  ],
+  "responses": [
+    "1) Medications: Take medications such as nonsteroidal anti-inflammatory drugs (NSAIDs), acetaminophen, or corticosteroids to reduce pain and inflammation.\n2) Physical Therapy: Participate in physical therapy to improve joint function, strengthen muscles, and reduce pain.\n3) Hot and Cold Therapy: Apply heat packs or cold compresses to affected joints to help reduce pain and stiffness.\n4) Maintain Healthy Weight: Maintain a healthy weight to reduce pressure on joints and minimize arthritis symptoms.\n5) Exercise Regularly: Engage in regular low-impact exercise such as walking, swimming, or cycling to improve joint flexibility and function.\n6) Joint Protection: Use assistive devices such as braces, splints, or orthotics to support and protect affected joints.\n7) Stay Active: Stay physically and socially active to maintain overall health and well-being.\n8) Manage Stress: Practice stress-reduction techniques such as deep breathing, meditation, or yoga to help manage arthritis pain.\n9) Dietary Changes: Make dietary changes such as reducing inflammation-causing foods and incorporating anti-inflammatory foods such as fatty fish, fruits, and vegetables.\n10) Consult a Doctor: If arthritis symptoms are severe, persistent, or interfere with daily activities, it's important to consult a healthcare provider for evaluation and treatment."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "allergies",
+  "patterns": [
+    "How do you treat allergies?",
+    "What should I do if I have allergies?",
+    "Remedies for allergies",
+    "How can I manage allergy symptoms?"
+  ],
+  "responses": [
+    "1) Avoid Allergens: Identify and avoid allergens that trigger allergic reactions, such as pollen, dust mites, pet dander, or certain foods.\n2) Use Antihistamines: Take over-the-counter or prescription antihistamines to reduce allergy symptoms such as sneezing, itching, and runny nose.\n3) Nasal Sprays: Use nasal sprays such as corticosteroids or decongestants to relieve nasal congestion and inflammation.\n4) Eye Drops: Use over-the-counter or prescription eye drops to relieve itching, redness, and watering of the eyes due to allergies.\n5) Keep Indoor Air Clean: Use air purifiers with HEPA filters and keep windows closed to reduce indoor exposure to allergens.\n6) Shower and Change Clothes: Shower and change clothes after outdoor activities to remove pollen and other allergens from your skin and clothing.\n7) Allergy Shots: Consider allergy shots (immunotherapy) to desensitize your immune system to specific allergens over time.\n8) Pet Care: Bathe pets regularly and keep them out of bedrooms to reduce exposure to pet dander.\n9) Wear a Mask: Wear a mask when gardening or doing outdoor activities to reduce exposure to pollen and other outdoor allergens.\n10) Consult a Doctor: If allergy symptoms are severe, persistent, or interfere with daily activities, it's important to consult a healthcare provider for evaluation and treatment."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "hypertension",
+  "patterns": [
+    "How do you treat hypertension?",
+    "What should I do if I have high blood pressure?",
+    "Remedies for hypertension",
+    "How can I manage high blood pressure?"
+  ],
+  "responses": [
+    "1) Medications: Take prescribed medications such as diuretics, ACE inhibitors, beta-blockers, or calcium channel blockers to help lower blood pressure.\n2) Healthy Eating: Follow a heart-healthy diet plan that includes plenty of fruits, vegetables, whole grains, lean proteins, and low-fat dairy products.\n3) Limit Sodium Intake: Limit sodium intake to less than 2,300 milligrams per day (or even less if advised by a healthcare provider) to help lower blood pressure.\n4) Maintain Healthy Weight: Maintain a healthy weight through diet and exercise, as excess weight can contribute to high blood pressure.\n5) Regular Exercise: Engage in regular physical activity such as brisk walking, swimming, or cycling to help lower blood pressure and improve cardiovascular health.\n6) Limit Alcohol Consumption: Limit alcohol consumption to moderate levels (up to one drink per day for women and up to two drinks per day for men) to help lower blood pressure.\n7) Quit Smoking: Quit smoking and avoid exposure to secondhand smoke, as smoking can raise blood pressure and increase the risk of heart disease.\n8) Stress Management: Practice stress-reduction techniques such as deep breathing, meditation, or yoga to help lower blood pressure.\n9) Monitor Blood Pressure: Monitor blood pressure regularly at home and keep track of readings to help identify trends and assess treatment effectiveness.\n10) Consult a Doctor: If blood pressure remains high despite lifestyle changes or if hypertension is severe, it's important to consult a healthcare provider for evaluation and treatment."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "gastroenteritis",
+  "patterns": [
+    "How do you treat gastroenteritis?",
+    "What should I do if I have stomach flu?",
+    "Remedies for gastroenteritis",
+    "How can I manage stomach flu symptoms?"
+  ],
+  "responses": [
+    "1) Hydration: Drink plenty of fluids such as water, clear broth, or electrolyte solutions to prevent dehydration caused by vomiting and diarrhea.\n2) Rest: Get plenty of rest to help your body recover and conserve energy.\n3) BRAT Diet: Follow a bland diet known as the BRAT diet (bananas, rice, applesauce, and toast) to help ease stomach discomfort and provide nourishment.\n4) Avoid Certain Foods: Avoid spicy, greasy, or high-fiber foods that may worsen diarrhea and upset stomach.\n5) Probiotics: Take probiotic supplements or consume probiotic-rich foods such as yogurt to help restore beneficial gut bacteria.\n6) Over-the-counter Medications: Take over-the-counter medications such as anti-diarrheal drugs or anti-nausea medications to relieve symptoms, if needed.\n7) Oral Rehydration Therapy: Use oral rehydration solutions (ORS) to replace lost fluids and electrolytes and prevent dehydration.\n8) Avoid Alcohol and Caffeine: Avoid alcohol and caffeine, as they can worsen dehydration and irritate the stomach.\n9) Wash Hands: Wash hands frequently with soap and water to prevent the spread of gastroenteritis-causing viruses and bacteria.\n10) Consult a Doctor: If symptoms are severe, persistent, or accompanied by high fever, blood in stool, or signs of dehydration, it's important to consult a healthcare provider for evaluation and treatment."
+  ],
+  "context_set": ""
+},
+
+
+	{"tag": "Fracture",
+         "patterns": ["How do you treat a Fracture?", "what to do if i get a Fracture?", "Which medicine to take if I have a Fracture?", "How to cure a Fracture?"],
+         "responses": ["1)Stop any bleeding. Apply pressure to the wound with a sterile bandage, a clean cloth or a clean piece of clothing. 2)Immobilize the injured area. Don't try to realign the bone or push a bone that's sticking out back in. If you've been trained in how to splint and professional help isn't readily available, apply a splint to the area above and below the fracture sites. Padding the splints can help reduce discomfort. 3)Apply ice packs to limit swelling and help relieve pain. Don't apply ice directly to the skin. Wrap the ice in a towel, piece of cloth or some other material. 4)Treat for shock. If the person feels faint or is breathing in short, rapid breaths, lay the person down with the head slightly lower than the trunk and, if possible, elevate the legs."],
+         "context_set": ""
+        }
+   ]
+}
